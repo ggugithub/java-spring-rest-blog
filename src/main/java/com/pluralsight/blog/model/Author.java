@@ -18,7 +18,7 @@ public class Author {
     private Long id;
 
     @Version
-    private Long Vrsion;
+    private Long version;
 
     private String firstname;
     private String lastname;
