@@ -17,10 +17,18 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Version
+    private Long Vrsion;
+
+    @NotNull
+    @Size(min=4, max=1000)
     private String title;
+
     @Column(length=1000000)
     @Lob
     private String body;
+
     @Temporal(TemporalType.DATE)
     @CreationTimestamp
     private Date date;
